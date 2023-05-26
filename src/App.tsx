@@ -1,6 +1,7 @@
 import React from 'react';
 import { useQuery, QueryClientProvider, QueryClient } from '@tanstack/react-query';
-import  DotLoader  from 'react-spinners/DotLoader';
+import DotLoader  from 'react-spinners/DotLoader';
+import QueryDemo from './components/query';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <QueryClientProvider client={client}>
         <div>
-            
+            <QueryDemo />
         </div>
     </QueryClientProvider>
   );
